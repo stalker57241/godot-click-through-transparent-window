@@ -35,7 +35,7 @@ func get_click_polygon() -> PoolVector2Array:
 
 func _on_Area_input_event(_viewport: Node, event: InputEvent,
 		_shape_idx: int) -> void:
-	# Triggered when left clicked, "LMB" event is created in
-	# Project -> Project Settings -> Input Map
+	# Triggered when left clicked, "LMB" event is created in Project ->
+	# Project Settings -> Input Map.
 	if event.is_action_pressed("LMB"):
 		emit_signal("avoid_triggered")

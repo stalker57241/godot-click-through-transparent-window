@@ -20,7 +20,7 @@ func initialize_singleton() -> void:
 
 func configure_overlay_positions() -> void:
 	# Creates and adds overlay position keys and values to the 
-	# "`verlay_positions` variable depending on the specified margin.
+	# `overlay_positions` variable depending on the specified margin.
 	var ss: Vector2 = OS.get_screen_size()
 	var margin: Vector2 = ss / 8
 	overlay_positions["TopLeft"] = margin
