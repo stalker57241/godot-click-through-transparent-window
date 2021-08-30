@@ -26,13 +26,13 @@ func initialize_window() -> void:
 	var ss: Vector2 = OS.get_screen_size()
 	OS.set_window_size(ss - Vector2(1, 1))
 	OS.set_window_position(Vector2(0, 0))
+	OS.set_window_always_on_top(true)
 	# If window size covers the whole screen, you'll get a black background. In
 	# order to prevent that, the window size is set to `ss - Vector2(1, 1)`.
 	OS.set_borderless_window(true)
-	OS.set_window_always_on_top(true)
 	OS.set_window_per_pixel_transparency_enabled(true)
-	# For better results, it is advised to enable the settings above, apart from
-	# the window size and position, from the project settings instead of here.
+	# For better results, it is advised to enable the two settings above, from
+	# the project settings instead of here.
 	get_tree().get_root().set_transparent_background(true)
 	Fw.global_position = GlobalStash.overlay_positions[sprite_position_id]
 	update_click_polygon()
