@@ -1,1 +1,3 @@
 res://scenes/canvas/canvas.tscn
+res://scenes/canvas/canvas.gd
+res://scenes/canvas/CharacterBody2d.gd

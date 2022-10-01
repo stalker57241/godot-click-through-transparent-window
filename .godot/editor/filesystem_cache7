@@ -1,5 +1,5 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1664632774
+::res://::1664662184
 default_env.tres::Environment::-1::1664630965::0::1::::<><>::
 icon.png::CompressedTexture2D::7161357149412109485::1664630965::1664630983::1::::<><>::
 README.md::TextFile::-1::1664630965::0::1::::<><>::
@@ -7,8 +7,9 @@ README.md::TextFile::-1::1664630965::0::1::::<><>::
 ::res://assets/project/::1664630983
 transparent.png::CompressedTexture2D::3101706340696849198::1664630965::1664630983::1::::<><>::
 ::res://scenes/::1664631033
-::res://scenes/canvas/::1664632691
-canvas.gd::GDScript::-1::1664632691::0::1::::<>Node2D<>::
-canvas.tscn::PackedScene::535252645671310375::1664632508::0::1::::<><>::res://scenes/canvas/canvas.gd<>uid://dabarg5nfubp2<>res://scenes/canvas/Polygon2d.gd
-Polygon2d.gd::GDScript::-1::1664632691::0::1::::<>Polygon2D<>::
+::res://scenes/canvas/::1664645607
+canvas.gd::GDScript::-1::1664645499::0::1::::<>Node2D<>::
+canvas.tscn::PackedScene::535252645671310375::1664645607::0::1::::<><>::res://scenes/canvas/canvas.gd<>uid://dabarg5nfubp2<>res://scenes/canvas/CharacterBody2d.gd
+CharacterBody2d.gd::GDScript::-1::1664645518::0::1::::<>CharacterBody2D<>::
+Polygon2d.gd::GDScript::-1::1664634540::0::1::::<>Polygon2D<>::
 ::res://scripts/::1664631003
