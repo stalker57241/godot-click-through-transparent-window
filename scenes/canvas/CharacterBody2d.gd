@@ -9,6 +9,7 @@ const JUMP_VELOCITY = -800.0
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var holding: bool = false
+# var polygon: PackedVector2Array = [] as PackedVector2Array
 
 enum {
 	STATE_IN_AIR = -1,
@@ -63,11 +64,32 @@ func _physics_process(delta):
 			velocity.x = 0 if direction < 0 else velocity.x
 			state = STATE_ON_WALL
 	move_and_slide()
+	#get_parent().queue_redraw()
+func _process(_delta: float) -> void:
+	self.queue_redraw()
+
+func _draw() -> void:
+	var poly = [] as PackedVector2Array
+	
+	for i in (get_child_count()):
+		var p = get_child(i)
+		if p is Polygon2D:
+			print("p is clockwise")
+			poly = Geometry2D.merge_polygons(
+					poly,
+					Transform2D(0, p.global_position) * p.polygon
+			)
+			print("poly: %s" % [poly])
+			poly = poly[0] as PackedVector2Array
+	DisplayServer.window_set_mouse_passthrough(
+		poly
+	)
 
 func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			holding = event.pressed
+	
 	if event is InputEventMouseMotion:
 		if holding:
 			var pos = self.position

@@ -12,8 +12,17 @@ position = Vector2(550, 243)
 motion_mode = 1
 script = ExtResource("2_r2ck2")
 
+[node name="Polygon2d3" type="Polygon2D" parent="CharacterBody2d"]
+position = Vector2(78, -150)
+scale = Vector2(0.998267, 1)
+texture = ExtResource("2_meali")
+invert_border = 32.0
+polygon = PackedVector2Array(0, 0, 64, 0, 64, 64, 0, 64)
+uv = PackedVector2Array(0, 0, 64, 0, 64, 64, 0, 64)
+polygons = [PackedInt32Array(0, 1, 2, 3)]
+
 [node name="Polygon2d2" type="Polygon2D" parent="CharacterBody2d"]
-position = Vector2(0, -70)
+position = Vector2(21, -86)
 scale = Vector2(0.998267, 1)
 texture = ExtResource("2_meali")
 invert_border = 32.0
