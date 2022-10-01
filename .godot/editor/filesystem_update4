@@ -1,0 +1,7 @@
+res://src/Scenes/Canvas.tscn
+res://scenes/canvas/canvas.tscn
+res://scenes/canvas/canvas.gd
+res://src/Scripts/GlobalStash.gd
+res://src/Scripts/Flower.gd
+res://src/Scripts/Canvas.gd
+res://scenes/canvas/Polygon2d.gd

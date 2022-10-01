@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://hvjseabelytj"]
+
+[ext_resource type="Script" path="res://scenes/canvas/canvas.gd" id="1_xmr4j"]
+[ext_resource type="Texture2D" uid="uid://dabarg5nfubp2" path="res://icon.png" id="2_meali"]
+[ext_resource type="Script" path="res://scenes/canvas/Polygon2d.gd" id="3_8bipd"]
+
+[node name="Canvas" type="Node2D"]
+script = ExtResource("1_xmr4j")
+
+[node name="Polygon2d" type="Polygon2D" parent="."]
+scale = Vector2(0.998267, 1)
+texture = ExtResource("2_meali")
+invert_border = 32.0
+polygon = PackedVector2Array(0, 0, 64, 0, 64, 64, 0, 64)
+uv = PackedVector2Array(0, 0, 64, 0, 64, 64, 0, 64)
+polygons = [PackedInt32Array(0, 3, 2, 1)]
+internal_vertex_count = 4
+script = ExtResource("3_8bipd")

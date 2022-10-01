@@ -6,34 +6,38 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="ClickThroughTransparentWindow"
 run/main_scene="res://src/Scenes/Canvas.tscn"
+config/features=PackedStringArray("4.0")
 boot_splash/image="res://assets/project/transparent.png"
-boot_splash/bg_color=Color( 0.12549, 0.145098, 0.192157, 1 )
+boot_splash/bg_color=Color(0.12549, 0.145098, 0.192157, 1)
 config/icon="res://icon.png"
 
 [autoload]
 
-GlobalStash="*res://src/Scripts/GlobalStash.gd"
+GlobalStash="res://src/Scripts/GlobalStash.gd"
 
 [display]
 
+window/size/mode=3
+window/size/borderless=true
+window/size/always_on_top=true
+window/size/transparent=true
+window/per_pixel_transparency/allowed=true
 window/size/width=1919
 window/size/height=1080
-window/size/borderless=true
-window/per_pixel_transparency/allowed=true
 window/per_pixel_transparency/enabled=true
 
 [input]
 
 LMB={
 "deadzone": 0.5,
-"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
- ]
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
+]
 }
 
 [physics]
